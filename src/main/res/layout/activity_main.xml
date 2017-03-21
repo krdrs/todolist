@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:scrollbars="vertical"
+        android:layout_width="282dp"
+        android:layout_height="379dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.24"
+        android:text="Add"
+        android:onClick="addTask"
+        />
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text=""
+        android:id="@+id/edit"
+        android:onClick="selfDestruct" />
+</LinearLayout>
